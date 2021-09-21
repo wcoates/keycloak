@@ -15,7 +15,6 @@ import org.keycloak.storage.UserStorageProviderFactory;
 public class PropertyFileUserStorageProviderFactory
 		implements UserStorageProviderFactory<PropertyFileUserStorageProvider>
 {
-
 	public static final String PROVIDER_NAME = "readonly-property-file";
 	private static final Logger logger =
 			Logger.getLogger(PropertyFileUserStorageProviderFactory.class.getName());

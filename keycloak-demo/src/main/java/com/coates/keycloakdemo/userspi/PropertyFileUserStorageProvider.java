@@ -22,18 +22,13 @@ import org.keycloak.storage.UserStorageProvider;
 import org.keycloak.storage.adapter.AbstractUserAdapter;
 import org.keycloak.storage.user.UserLookupProvider;
 
-
-
 public class PropertyFileUserStorageProvider implements UserStorageProvider, UserLookupProvider,
 		CredentialInputValidator, CredentialInputUpdater
 {
-
 	protected KeycloakSession session;
 	protected Properties properties;
 	protected ComponentModel model;
 	protected Map<String, UserModel> loadedUsers = new HashMap<>();
-
-
 
 	public PropertyFileUserStorageProvider(KeycloakSession session, ComponentModel model,
 			Properties properties)
@@ -130,7 +125,4 @@ public class PropertyFileUserStorageProvider implements UserStorageProvider, Use
 			}
 		};
 	}
-
-
-
 }
